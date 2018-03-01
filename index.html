@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html LANG="en-us">
+  <head>
+    <title>Trivia Game</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="Basic Quiz (Timed Form)" />
+    <meta name="keywords" content="HTML,CSS,JavaScript" />
+    <meta name="author" content="Thomas Harris" />
+    <meta name="copyright" content="2018, thomas harris" />
+    <meta name="publisher" content="thomas harris" />
+    <link href="https://fonts.googleapis.com/css?family=Orbitron:700" rel="stylesheet">
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+          crossorigin="anonymous" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+    
+  <body>
+    <div class="container" id="all-content">
+      <div id="game-area">
+      <div class="row justify-content-md-center">
+        <div id="title-div">
+          <h1 id="page-title">Detective/Police Shows From the 60's &amp; 70's!</h1>
+        </div>
+      </div>
+
+      <div class="row justify-content-md-center">
+        <div id="timer-div">
+          <p id="timer-display">Time Remaining: <span id="seconds">000</span> Seconds</p>
+        </div>
+      </div>
+
+      <div class="row justify-content-md-center">
+        <div class="button-div" id="start-div">
+          <button class="big-button btn btn-danger btn-lg" id="start-button">Start</button>
+        </div>
+      </div>
+
+      <div class="row justify-content-md-center">
+        <div id="scores">
+          <p id="all-done">All Done!</p>
+          <p class="result-total">Correct Answers: <span id="correct-total">0</span></p>
+          <p class="result-total">Incorrect Answers: <span id="incorrect-total">0</span></p>
+          <p class="result-total">Unanswered: <span id="unanswered-total">0</span></p>
+          <p></p>  <!-- paragraph to create additional padding -->
+        </div>
+      </div>
+
+<!-- 
+  Questions courtesy of http://www.123facts.com/play-quiz/Detective-and-Police-TV-Shows-from-the-60-s-and-70-s-6284.html
+-->
+      <div id="question-list">
+
+        <div class="row justify-content-md-center">
+          <p class="question-text">What actor played Mannix on the self-titled TV series?</p>
+        </div>
+        <div class="row justify-content-md-center">
+          <ul class="radio-group">
+            <input type="radio" name="answer01" id="answer01-01" value="choice01-01">Larry Linville</nput>
+            <input type="radio" name="answer01" id="answer01-02" value="choice01-02">Robert Reed</input>
+            <input type="radio" name="answer01" id="answer01-03" value="choice01-03">Joseph Campanella</input>
+            <input type="radio" name="answer01" id="answer01-04" value="choice01-04">Mike Connors</input>
+          </ul>
+        </div>
+
+        <div class="row justify-content-md-center">
+          <p class="question-text">What was the name of the agency for which Mannix worked during the show's first season?</p>
+        </div>
+        <div class="row justify-content-md-center">
+          <ul class="radio-group">
+            <input type="radio" name="answer02" id="answer02-01" value="choice02-01">Control</input>
+            <input type="radio" name="answer02" id="answer02-02" value="choice02-02">UNCLE</input>
+            <input type="radio" name="answer02" id="answer02-03" value="choice02-03">Interpol</input>
+            <input type="radio" name="answer02" id="answer02-04" value="choice02-04">Intertect</input>
+          </ul>
+        </div>
+
+        <div class="row justify-content-md-center">
+            <p class="question-text">What was the first name of fictional private investigator Mannix?</p>
+        </div>
+        <div class="row justify-content-md-center">
+          <ul class="radio-group">
+            <input type="radio" name="answer03" id="answer03-01" value="choice03-01">Tom</input>
+            <input type="radio" name="answer03" id="answer03-02" value="choice03-02">William</input>
+            <input type="radio" name="answer03" id="answer03-03" value="choice03-03">Joe</input>
+            <input type="radio" name="answer03" id="answer03-04" value="choice03-04">Sam</input>
+          </ul>
+        </div>
+  
+        <div class="row justify-content-md-center">
+          <p class="question-text">What was the name of Mannix' secretary on the TV Show Mannix?</p>
+        </div>
+        <div class="row justify-content-md-center">
+          <ul class="radio-group">
+            <input type="radio" name="answer04" id="answer04-01" value="choice04-01">Peggy</input>
+            <input type="radio" name="answer04" id="answer04-02" value="choice04-02">Betty</input>
+            <input type="radio" name="answer04" id="answer04-03" value="choice04-03">Billy Jo</input>
+            <input type="radio" name="answer04" id="answer04-04" value="choice04-04">Stacy</input>
+          </ul>
+        </div>
+    
+        <div class="row justify-content-md-center">
+          <p class="question-text">Who played Cannon on the detective series Cannon?</p>
+        </div>
+        <div class="row justify-content-md-center">
+          <ul class="radio-group">
+            <input type="radio" name="answer05" id="answer05-01" value="choice05-01">Martin Sheen</input>
+            <input type="radio" name="answer05" id="answer05-02" value="choice05-02">David Janssen</input>
+            <input type="radio" name="answer05" id="answer05-03" value="choice05-03">William Conrad</input>
+            <input type="radio" name="answer05" id="answer05-04" value="choice05-04">Mike Farrell</input>
+          </ul>
+        </div>
+
+        <div class="row justify-content-md-center">
+          <p class="question-text">What detective series was a spinoff from Cannon?</p>
+        </div>
+        <div class="row justify-content-md-center">
+          <ul class="radio-group">
+            <input type="radio" name="answer06" id="answer06-01" value="choice06-01">Kojak</input>
+            <input type="radio" name="answer06" id="answer06-02" value="choice06-02">Ironside</input>
+            <input type="radio" name="answer06" id="answer06-03" value="choice06-03">Barnaby Jones</input>
+            <input type="radio" name="answer06" id="answer06-04" value="choice06-04">McCloud</input>
+          </ul>
+        </div>
+                
+        <div class="row justify-content-md-center">
+          <p class="question-text">Who played fictional homicide detective Columbo?</p>
+        </div>
+        <div class="row justify-content-md-center">
+          <ul class="radio-group">
+            <input type="radio" name="answer07" id="answer07-01" value="choice07-01">Jack Klugman</input>
+            <input type="radio" name="answer07" id="answer07-02" value="choice07-02">Rock Hudson</input>
+            <input type="radio" name="answer07" id="answer07-03" value="choice07-03">Dennis Weaver</input>
+            <input type="radio" name="answer07" id="answer07-04" value="choice07-04">Peter Falk</input>
+          </ul>
+        </div>
+                  
+        <div class="row justify-content-md-center">
+          <p class="question-text">Which cop show character was played by Angie Dickinson?</p>
+        </div>
+        <div class="row justify-content-md-center">
+          <ul class="radio-group">
+            <input type="radio" name="answer08" id="answer08-01" value="choice08-01">Detective Honey West</input>
+            <input type="radio" name="answer08" id="answer08-02" value="choice08-02">Jaime Sommers</input>
+            <input type="radio" name="answer08" id="answer08-03" value="choice08-03">Captain Honey Ryder</input>
+            <input type="radio" name="answer08" id="answer08-04" value="choice08-04">Sgt. "Pepper" Anderson</input>
+          </ul>
+        </div>
+                    
+        <div class="row justify-content-md-center">
+          <p class="question-text">Officers Pete Malloy and Jim Reed patrol on this series.</p>
+        </div>
+        <div class="row justify-content-md-center">
+          <ul class="radio-group">
+            <input type="radio" name="answer09" id="answer09-01" value="choice09-01">Mod Squad</input>
+            <input type="radio" name="answer09" id="answer09-02" value="choice09-02">Dragnet</input>
+            <input type="radio" name="answer09" id="answer09-03" value="choice09-03">Starsky &amp; Hutch</input>
+            <input type="radio" name="answer09" id="answer09-04" value="choice09-04">Adam 12</input>
+          </ul>
+        </div>
+                      
+        <div class="row justify-content-md-center">
+          <p class="question-text">"Book 'em, Danno!" was the catch phrase of what police show?</p>
+        </div>
+        <div class="row justify-content-md-center">
+          <ul class="radio-group">
+            <input type="radio" name="answer10" id="answer10-01" value="choice10-01">Hawaii Five-O</input>
+            <input type="radio" name="answer10" id="answer10-02" value="choice10-02">The Avengers</input>
+            <input type="radio" name="answer10" id="answer10-03" value="choice10-03">Baretta</input>
+            <input type="radio" name="answer10" id="answer10-04" value="choice10-04">77 Sunset Strip</input>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row justify-content-md-center">
+        <div class="button-div" id="done-div">
+          <button class="big-button btn btn-danger btn-lg" id="done-button">Done</button>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous" ></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" 
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous" ></script>
+            
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" 
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous" ></script>
+
+    <script src="./assets/javascript/app.js" ></script>
+  </body>
+</html>

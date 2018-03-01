@@ -1,0 +1,72 @@
+body {
+  background-image : url(../images/questionmarks.jpg);
+  background-repeat : repeat;
+}
+
+#game-area {
+  background-color : #FBF487;
+  margin-top: 2.5rem;
+  margin-left: 6rem;
+  margin-right: 6rem;
+}
+
+#page-title {
+  padding-top: 3rem;
+  color : #3701FC; 
+  font-family: 'Orbitron', sans-serif;
+  font-size : 3rem;
+  text-align : center;
+  letter-spacing : 6px;
+}
+
+#start-div {
+  display : none;
+  margin-top: 10rem;
+}
+
+.big-button {
+  height: 5rem;
+  width: 24rem;
+  font-size: 2rem;
+  color : #341615;
+}
+
+#timer-div {
+  display : none;
+}
+
+#timer-display {
+  font-size : 1.4rem;
+  font-family : 'Georgia', Times, 'Times New Roman', serif;
+}
+
+#scores {
+  display: none;
+  margin-top : 3rem;
+  font-family : 'Georgia', Times, 'Times New Roman', serif;
+}
+
+#all-done {
+  font-size : 2rem;
+  text-align : center;
+}
+
+.result-total {
+  margin-bottom : -1px;
+  text-align : center;
+  font-size : 1.25rem;
+}
+
+#question-list {
+  display : none;
+  font-family : 'Georgia', Times, 'Times New Roman', serif;
+  margin-top : -10rem;
+}
+
+.question-text {
+  font-size : 1.4rem;
+}
+
+#done-div {
+ display : none;
+}
